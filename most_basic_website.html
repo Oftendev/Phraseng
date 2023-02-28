@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
     <title>Phraseng</title>
     <meta charset="UTF-8">
 </head>
+
 <body>
     <header class="header">
         <div class="profile">
             <div class="profile__image">
-                <img src="images/avatar.png"/>
+                <img src="images/avatar.png" />
             </div>
             <div class="profile__info">
                 <div class="profile__name-and-rank">
-                    Tratata  bronze
+                    Tratata bronze
                 </div>
                 <div class="profile__progressbar"></div>
             </div>
         </div>
-        <div class="header__counter">
-            1/10
-        </div>  
-    </header>
-
-    <div class="input-line">
-        <div class="input-line__heading">
-            Как тебя зовут?
+        <div class="accuracy">
+            <div class="accuracy__meter">
+                100%
+            </div>
+            <div class="accuracy__label">
+                точность
+            </div>
         </div>
-        <form>   
+    </header>
+    <div class="input-line">
+        <div class="head-container">
+            <div class="head-container__heading">
+                Он любит шоколад
+            </div>
+            <div class="head-container__counter">
+                3/10
+            </div>
+        </div>
+        <form>
             <input type="text" class="input-line__text">
-            <button class="input-line__button">Показать образец</button> 
+            <button class="input-line__button">Показать образец</button>
         </form>
         <button class="input-line__show-answer">Показать ответ</button>
-      </div>
+    </div>
+    <table class="answers-container">
+        <tr>
+            <td class="answers-container__question">Сколько тебе лет?</td>
+            <td class="answers-container__correct-answer">How old are you?</td>
+            <td class="answers-container__triangle-button"><button></button></td>
+        </tr>
+        <tr>
+            <td class="answers-container__question">Как тебя зовут?</td>
+            <td class="answers-container__correct-answer">What is your name?</td>
+            <td class="answers-container__triangle-button"><button></button></td>
+        </tr>
+    </table>
 </body>
-</html>
 
-<table class="answers-container">
-  <tr>
-    <td class="answers-container__question">Сколько тебе лет?</td>
-    <td class="answers-container__correct-answer">How old are you?</td>
-    <td class="answers-container__triangle-button"><button></button></td>
-  </tr>
-  <tr>
-    <td class="answers-container__question">Как тебя зовут?</td>
-    <td class="answers-container__correct-answer">What is your name?</td>
-    <td class="answers-container__triangle-button"><button></button></td>
-  </tr>
-</table>
+</html>

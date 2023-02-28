@@ -1,22 +1,21 @@
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-.header{
+.header {
   padding: 20px;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .profile {
-  display:flex;
+  display: flex;
   justify-content: flex-start;
   height: 60px;
 }
-
 .profile__image {
   display: flex;
   height: 60px;
@@ -27,47 +26,46 @@
   margin-right: 20px;
   overflow: hidden;
 }
-
-.profile__image img{
+.profile__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-.profile__info{
+.profile__info {
   display: flex;
   flex-direction: column;
 }
-
 .profile__name-and-rank {
   display: flex;
   margin: auto;
   font-size: 0.8em;
 }
-
 .profile__progressbar {
   height: 50%;
   background-color: #555;
 }
 
-.header__counter {
-  display:flex;
-  color: #B6AFAF;
-  position: relative;
+.accuracy {
+  display: block;
+}
+.accuracy__meter {
+  display: block;
+  font-size: 1.8em;
+  color: #159221;
+}
+.accuracy__label {
+  display: block;
+  font-size: 0.5em;
+  color: #989898;
 }
 
 .input-line {
   position: relative;
   width: 60%;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 30px 0;
 }
-
-.input-line__heading {
-  font-size: 1.6em; 
-  padding: 5px 0px;
-}
-
 .input-line__text {
   width: 100%;
   height: 42px;
@@ -75,94 +73,104 @@
   border: 2px solid #000000;
   border-radius: 10px;
   outline: none;
-  background: #D9D9D9;
+  background: #d9d9d9;
   color: #131313;
   font-size: 100%;
 }
-
 .input-line__button {
   display: block;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: 0;
   margin-top: 3px;
   padding: 3px 15px;
   border: 2px solid #000000;
   border-radius: 10px;
   outline: none;
-  background: #D9D9D9;
+  background: #d9d9d9;
   color: #131313;
   font-size: 100%;
   cursor: pointer;
   transition: all 0.4s;
 }
-
-.input-line__button:hover{
+.input-line__button:hover {
   background-color: #cecece;
 }
-
-.input-line__button:active{
+.input-line__button:active {
   background-color: #535353;
   color: #ffffff;
 }
-
 .input-line__show-answer {
   display: block;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: 3px;
   margin-right: 0;
   margin-left: auto;
   border: 0px;
-  background:#ffffff;
-  color: #4D5EFF;
+  background: #ffffff;
+  color: #4d5eff;
   text-decoration: underline;
   font-size: 12px;
   padding: 0px;
   cursor: pointer;
 }
 
+.head-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+.head-container__heading {
+  font-size: 1.6em;
+}
+.head-container__counter {
+  display: flex;
+  color: #b6afaf;
+  position: relative;
+  font-size: 1.2em;
+}
+
 .answers-container {
   position: relative;
   width: 60%;
-  margin: 0 auto; 
+  margin: 0 auto;
   border-spacing: 0;
 }
-
-.answers-container__triangle-button {
-  display:table-cell;
-  vertical-align: middle;
-  width: 1.2em;
-}
-
-.answers-container__triangle-button button{
-	width: 0;
-	height: 0;
-  padding: 0;
-  background-color: transparent;
-	border-top: 0.8em solid transparent;
-	border-left: 1.6em solid #adadad;
-	border-bottom: 0.8em solid transparent;
-  border-right: 0px;
-  cursor: pointer;
-}
-
-
 .answers-container tr {
   height: 2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
-
 .answers-container__question {
-  display:table-cell;
+  display: table-cell;
   vertical-align: middle;
   padding: 0;
   font-weight: 500;
   font-size: 1.2em;
 }
-
 .answers-container__correct-answer {
-  display:table-cell;
+  display: table-cell;
   vertical-align: middle;
-  padding:0;
+  padding: 0;
   color: #159221;
   font-weight: 500;
   font-size: 1.2em;
 }
+.answers-container__triangle-button {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1.2em;
+}
+.answers-container__triangle-button button {
+  width: 0;
+  height: 0;
+  padding: 0;
+  background-color: transparent;
+  border-top: 0.8em solid transparent;
+  border-left: 1.6em solid #adadad;
+  border-bottom: 0.8em solid transparent;
+  border-right: 0px;
+  cursor: pointer;
+}/*# sourceMappingURL=stylesheet.css.map */
